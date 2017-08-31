@@ -1,0 +1,12 @@
+{
+  "name": "unit-test-practice",
+  "version": "1.0.0",
+  "description": "Sample Repo for practicing unit test",
+  "main": "index.js",
+  "author": "Joshua John Villahermosa <joshvillahermosa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jasmine": "^2.8.0",
+    "nyc": "^11.1.0"
+  }
+}
