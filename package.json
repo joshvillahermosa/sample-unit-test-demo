@@ -6,7 +6,12 @@
   "author": "Joshua John Villahermosa <joshvillahermosa@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "http-server": "^0.10.0",
     "jasmine": "^2.8.0",
     "nyc": "^11.1.0"
+  },
+  "scripts": {
+    "test" : "nyc jasmine",
+    "serve:testcov" : "http-server coverage/lcov-report/ -p 3000"
   }
 }
