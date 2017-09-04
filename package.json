@@ -11,7 +11,17 @@
     "nyc": "^11.1.0"
   },
   "scripts": {
-    "test" : "nyc jasmine",
-    "serve:testcov" : "http-server coverage/lcov-report/ -p 3000"
+    "serve-coverage": "http-server -d ./coverage/",
+    "test": "nyc jasmine"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ],
+    "exclude": [
+      "**/*.spec.js"
+    ]
   }
 }
